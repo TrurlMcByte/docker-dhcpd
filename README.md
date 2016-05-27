@@ -22,6 +22,18 @@ where `dhcpd_data` is named data volume (will be created automaticaly on first r
 * `DNS` - list of dns servers, default "`8.8.8.8, 8.8.4.4`"
 * `IP`, `SUBNET`, `NETMASK`, `ROUTER` - network settings, by default will try to detect automatically
 * `RANGE` - range IP's to lease (for example `192.168.0.150 192.168.0.250`, no default)
+* `FIXED` - list of presetted host in format "`MAC-addr`, `hostname`, `IP`" pre line or separated by '`;`'
+
+for example 
+`-e FIXED="08:00:27:94:FB:73 core01 192.168.1.51; 08:00:27:61:7F:00 core02 192.168.1.52"`
+or 
+```
+    -e FIXED='
+08:00:27:94:FB:73 core01 192.168.1.51
+08:00:27:61:7F:00 core02 192.168.1.52
+08:00:27:7B:DC:84 core03 192.168.1.53' \
+```
+
 
 ### tftp server
 
