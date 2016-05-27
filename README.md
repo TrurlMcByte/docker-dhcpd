@@ -2,7 +2,7 @@
 
 Dockerized isc-dhcp with tftp
 
-#Usage
+# Usage
 
 Recommended to run it in net=host mode
 
@@ -12,7 +12,7 @@ docker run -d --restart=always --net=host --name some_dhcpd_container_name -v dh
 
 where dhcpd_data is named data volume (will be created automaticaly on first run and usually placed in /var/lib/docker/volumes)
 
-#Env setting
+# Env setting
 
 DOMAIN - default domain name (option domain-name), by default not set
 DNS - list of dns servers, default "8.8.8.8, 8.8.4.4"
