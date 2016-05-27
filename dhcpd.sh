@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#fixed IP list example
 #FIXED="08:00:27:94:FB:73 core01 192.168.1.51; 08:00:27:61:7F:00 core02 192.168.1.52; 08:00:27:7B:DC:84 core03 192.168.1.53"
 
 mkdir -p /data
